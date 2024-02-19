@@ -1,18 +1,24 @@
 :root {
-  --complimentary: #815205;
-  --text: black;
-  --text-dim: #444;
-  --link: #3366cc;
-  --link-visited: #795cb2;
-  --code-background: #f3f5f7;
-  --code-border: #eaecf0;
-  --code-border: transparent;
-  --code-hl: #e6e6e6;
-  --border-general: #cccfd4;
-  --table-th: #e1e5ea;
-  --table-tr: #edeff2;
-  --toc-background: #f9f9f9;
-  --toc-border: #aaa;
+    --complimentary: #815205;
+    --text: black;
+    --text-dim: #444;
+    --link: #3366cc;
+    --link-visited: #795cb2;
+    --code-background: #f3f5f7;
+    --code-border: #eaecf0;
+    --code-border: transparent;
+    --code-hl: #e6e6e6;
+    --border-general: #cccfd4;
+    --table-th: #e1e5ea;
+    --table-tr: #edeff2;
+    --toc-background: #f9f9f9;
+    --toc-border: #aaa;
+    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
+    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+
+    // 添加字体
+    --base-font-family: "LXGW WenKai", "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,6 +69,7 @@ body {
   padding: 0em 1em 2em 1em;
   /* font-family: "Open Sans", sans-serif; */
   font-family:
+    "LXGW WenKai Screen",
     "Inter",
     -apple-system,
     BlinkMacSystemFont,
