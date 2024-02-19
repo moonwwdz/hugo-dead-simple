@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
     --complimentary: #815205;
     --text: black;
     --text-dim: #444;
@@ -19,12 +20,30 @@
     // 添加字体
     --base-font-family: "LXGW WenKai", "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
     --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
+=======
+  --complimentary: #815205;
+  --text: black;
+  --code: black;
+  --text-dim: #444;
+  --link: #3366cc;
+  --link-visited: #795cb2;
+  --code-background: #f3f5f7;
+  --code-border: #eaecf0;
+  --code-border: transparent;
+  --code-hl: #e6e6e6;
+  --border-general: #cccfd4;
+  --table-th: #e1e5ea;
+  --table-tr: #edeff2;
+  --toc-background: #f9f9f9;
+  --toc-border: #aaa;
+>>>>>>> 00d20206465e44a25bc54f0a9a919321f6b51624
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --complimentary: #815205;
     --text: #d8d8d8;
+    --code: #cbcbcb;
     --text-dim: #a7a7a7;
     /* --link: #8cb4ff; */
     --link: #88a9e9;
@@ -67,16 +86,14 @@ html {
 body {
   margin: auto;
   padding: 0em 1em 2em 1em;
-  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 300;
   font-family:
     "LXGW WenKai Screen",
     "Inter",
     -apple-system,
     BlinkMacSystemFont,
     "Roboto",
-    "Segoe UI",
     Helvetica,
-    Arial,
     sans-serif;
   line-height: 1.54;
   text-align: justify;
@@ -106,7 +123,6 @@ p {
 }
 
 h1 {
-  font-family: "Linux Libertine", "Georgia", "Times", serif;
   font-weight: normal;
   margin-bottom: 0px;
   font-size: 2em;
@@ -116,15 +132,12 @@ h1 {
 h2 {
   margin-bottom: 0.5em;
   margin-top: 1.2em;
-  /* border-bottom: 1px solid var(--border-general); */
-  text-decoration-line: underline;
   font-weight: normal;
-  font-size: 1.6em;
-  /* font-family: "Linux Libertine", "Georgia", "Times", serif; */
+  font-size: 1.65em;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 600;
   margin-bottom: 0.7em;
   padding-bottom: 0;
