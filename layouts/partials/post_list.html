@@ -1,5 +1,5 @@
 <ul class="post-list">
-  {{ range .CurrentSection.RegularPages }}
+  {{ range sort .CurrentSection.RegularPages ".Date" "desc"}}
 
   {{ partial "post_row.html" . }}
 
