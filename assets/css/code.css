@@ -30,7 +30,7 @@ pre {
 }
 
 code {
-  font-family: "Iosevka Light", monospace;
+  font-family: 'Source Code Pro', monospace;
   color: var(--code);
 
   /* For Iosevka */
@@ -112,7 +112,7 @@ pre code {
   .copy-code-button {
     animation-duration: 1s;
     animation-name: code-fade-in;
-    margin-top: -26px;
+    margin-top: -22px;
     float: right;
     display: block;
     background-color: var(--code-background);
