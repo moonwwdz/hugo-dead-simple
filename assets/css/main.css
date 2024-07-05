@@ -1,5 +1,4 @@
 :root {
-<<<<<<< HEAD
     --complimentary: #815205;
     --text: black;
     --text-dim: #444;
@@ -20,23 +19,6 @@
     // 添加字体
     --base-font-family: "LXGW WenKai", "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
     --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
-=======
-  --complimentary: #815205;
-  --text: black;
-  --code: black;
-  --text-dim: #444;
-  --link: #3366cc;
-  --link-visited: #795cb2;
-  --code-background: #f3f5f7;
-  --code-border: #eaecf0;
-  --code-border: transparent;
-  --code-hl: #e6e6e6;
-  --border-general: #cccfd4;
-  --table-th: #e1e5ea;
-  --table-tr: #edeff2;
-  --toc-background: #f9f9f9;
-  --toc-border: #aaa;
->>>>>>> 00d20206465e44a25bc54f0a9a919321f6b51624
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,7 +68,8 @@ html {
 body {
   margin: auto;
   padding: 0em 1em 2em 1em;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: large;
   font-family:
     "LXGW WenKai Screen",
     "Inter",
