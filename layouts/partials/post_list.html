@@ -1,8 +1,13 @@
+{{ $currentSection := .CurrentSection }}
+{{ $pages := sort .CurrentSection.RegularPages ".Date" "desc" }}
+{{ range $pages.GroupByDate "2006" }}
+<h3>{{ .Key }}</h3>
 <ul class="post-list">
-  {{ range sort .CurrentSection.RegularPages ".Date" "desc"}}
+  {{ range sort .Pages ".Date" "desc"}}
 
   {{ partial "post_row.html" . }}
 
   {{ end }}
 </ul>
+{{ end }}
 

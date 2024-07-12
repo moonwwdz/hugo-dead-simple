@@ -9,7 +9,8 @@
 
     {{ range .Sections }}
         {{ if eq .CurrentSection.Title "Posts" }}
-            <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
+            <!--h2 class="section-title">{{ .CurrentSection.Title }}</h2-->
+            <h2 class="section-title">文章列表</h2>
             {{ .CurrentSection.Content }}
             {{ partial "post_list.html" . }}
         {{ end }}

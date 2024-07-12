@@ -11,9 +11,12 @@
         <p id="subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
     {{ if .Params.date }}
-        <span class="datesub">{{ .Date.Format "Jan 2, 2006" }}{{ if .GitInfo }} &nbsp;&nbsp; m. {{
-            .Lastmod.Format "Jan 2, 2006" }}{{ end }}</span>
-    {{ end }} {{ partial "tags.html" .}}
+        {{ $content := .Content }}
+        {{ $contentWithoutMarkdown := $content | replaceRE `<[^>]*>` "" | replaceRE `\s+` " " }}
+        {{ $wordCount := len (split $contentWithoutMarkdown "") }}
+        <span class="datesub">发布：{{ .Date.Format "2006-01-01" }}{{ if .GitInfo }} &nbsp;&nbsp;|&nbsp;&nbsp; 更新：{{
+            .Lastmod.Format "2006-01-01" }}{{ end }} &nbsp;&nbsp;|&nbsp;&nbsp; <span class="post-date">共{{ $wordCount }}字</span>，阅读约<span class="more-meta"> {{ .ReadingTime  }} 分钟</span></span>
+    {{ end }} &nbsp;&nbsp;| {{ partial "tags.html" .}}
   </div>
 </div>
 {{ else }}
