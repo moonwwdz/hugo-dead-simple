@@ -15,8 +15,8 @@
         {{ $contentWithoutMarkdown := $content | replaceRE `<[^>]*>` "" | replaceRE `\s+` " " }}
         {{ $wordCount := len (split $contentWithoutMarkdown "") }}
         {{ $readingTime := math.Round (div $wordCount 400.0) }}
-        <span class="datesub">发布：{{ .Date.Format "2006-01-01" }}{{ if .GitInfo }} &nbsp;&nbsp;|&nbsp;&nbsp; 更新：{{
-            .Lastmod.Format "2006-01-01" }}{{ end }} &nbsp;&nbsp;|&nbsp;&nbsp; <span class="post-date">共{{ $wordCount }}字</span>，阅读约<span class="more-meta"> {{ cond (eq $readingTime 0) 1 $readingTime }} 分钟</span></span>
+        <span class="datesub">发布：{{ .Date.Format "2006-01-02" }}{{ if .GitInfo }} &nbsp;&nbsp;|&nbsp;&nbsp; 更新：{{
+            .Lastmod.Format "2006-01-02" }}{{ end }} &nbsp;&nbsp;|&nbsp;&nbsp; <span class="post-date">共{{ $wordCount }}字</span>，阅读约<span class="more-meta"> {{ cond (eq $readingTime 0) 1 $readingTime }} 分钟</span></span>
     {{ end }} &nbsp;&nbsp;| {{ partial "tags.html" .}}
   </div>
 </div>
